@@ -10,10 +10,10 @@ sambot {
 		api_key: 'tE1khNl0pNUylrjKNCu8wAr2Q', 
 		api_secret: '3syAm0IuMxI1wJrH3D26fQDldZY0lZaB4Fj0pwE6KcVuLskBok'
 	}
-	mod :lifespan
+	#mod :lifespan
 	mod :weight2twitter
 
-	channels.lifespan.on(:walked) { |event|
-		pp event
-	}
+	#channels.lifespan.on(:walked) { |event|
+	#	pp event
+	#}
 }

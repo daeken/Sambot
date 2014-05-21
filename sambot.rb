@@ -56,12 +56,21 @@ $channels = Channels.new
 def channels() $channels end
 
 class Sambot
+	def Sambot.options
+		$instance.options
+	end
+
 	def initialize
 		@timers = []
 	end
 
 	def mod(mod, options={})
+		@options = options
 		require_relative "modules/#{ mod }.rb"
+	end
+
+	def options
+		@options
 	end
 
 	def run
