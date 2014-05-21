@@ -1,5 +1,3 @@
-require 'pp'
-
 class Object
 	def metaclass
 		class << self; self; end
